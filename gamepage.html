@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Victorian theme memory match game made for Year 5 WoW project by Adam Ahmed of Birchwood Primary School">
+  <meta name="keywords" content="HTML, CSS, JavaScript, WoW, Birchwood, Memory Game">
+  <meta name="author" content="Adam Ahmed">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Victorian Memory Match</title>
+
+  <!--GOOGLE FONTS-->
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+
+  <!--BOOTSTRAP-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body id="game">
+  <header>
+    <h1 class="text-center mt-4 mb-2 headTag">𝔈𝔫𝔤𝔩𝔞𝔫𝔡</h1>
+  </header>
+
+  <section class="container mx-auto">
+    <section class="mx-auto">
+      <div class="row">
+        <div class="col-12 text-center points">
+          <p>Battles won: <span id="point"> 0</span></p>
+        </div>
+      </div>
+
+      <div id="won" class="text-center">
+        <h1>𝔜𝔬𝔲 𝔥𝔞𝔳𝔢 𝔠𝔬𝔫𝔮𝔲𝔢𝔯𝔢𝔡 𝔱𝔥𝔢 𝔠𝔬𝔲𝔫𝔱𝔯𝔶!</h1>
+        <p>Battles won: <span id="finalPoints">0</span></p>
+        <button class="btn" id="playAgain">ℭ𝔬𝔫𝔮𝔲𝔢𝔯 𝔞𝔫𝔬𝔱𝔥𝔢𝔯 𝔠𝔬𝔲𝔫𝔱𝔯𝔶</button>
+      </div>
+
+      <section class="memory-game">
+        <div class="memory-card" data-cards="card1">
+          <img class="front-face" src="Images/queen.png" alt="Queen image" />
+          <img class="back-face" src="Images/card.png" alt="battle" />
+        </div>
+        <div class="memory-card" data-cards="card1">
+          <img class="front-face" src="Images/queen.png" alt="Queen image" />
+          <img class="back-face" src="Images/card.png" alt="battle" />
+        </div>
+
+        <div class="memory-card" data-cards="card2">
+          <img class="front-face" src="Images/homeless.png" alt="Homeless man image" />
+          <img class="back-face" src="Images/card.png" alt="battle" />
+        </div>
+        <div class="memory-card" data-cards="card2">
+          <img class="front-face" src="Images/homeless.png" alt="Homeless man image" />
+          <img class="back-face" src="Images/card.png" alt="battle" />
+        </div>
+
+        <div class="memory-card" data-cards="card3">
+          <img class="front-face" src="Images/porridge.png" alt="Porridge image " />
+          <img class="back-face" src="Images/card.png" alt="battle" />
+        </div>
+        <div class="memory-card" data-cards="card3">
+          <img class="front-face" src="Images/porridge.png" alt="Porridge image" />
+          <img class="back-face" src="Images/card.png" alt="battle" />
+        </div>
+
+        <div class="memory-card" data-cards="card4">
+          <img class="front-face" src="Images/sword.png" alt="Sword image" />
+          <img class="back-face" src="Images/card.png" alt="battle" />
+        </div>
+        <div class="memory-card" data-cards="card4">
+          <img class="front-face" src="Images/sword.png" alt="Sword image" />
+          <img class="back-face" src="Images/card.png" alt="battle" />
+        </div>
+
+        <div class="memory-card" data-cards="card5">
+          <img class="front-face" src="Images/rhorse.png" alt="Rocking horse image" />
+          <img class="back-face" src="Images/card.png" alt="battle" />
+        </div>
+
+        <div class="memory-card" data-cards="card5">
+          <img class="front-face" src="Images/rhorse.png" alt="Rocking horse image" />
+          <img class="back-face" src="Images/card.png" alt="battle" />
+        </div>
+
+        <div class="memory-card" data-cards="card6">
+          <img class="front-face" src="Images/ship.png" alt="War ship image" />
+          <img class="back-face" src="Images/card.png." alt="battle" />
+        </div>
+        <div class="memory-card" data-cards="card6">
+          <img class="front-face" src="Images/ship.png" alt="War ship image" />
+          <img class="back-face" src="Images/card.png" alt="battle" />
+        </div>
+      </section>
+    </section>
+  </section>
+  <a class="btn btn-large btn-warning retreat" href="index.html">ℜ𝔢𝔱𝔯𝔢𝔞𝔱</a>
+  <script src="game.js"></script>
+</body>
+
+</html>
