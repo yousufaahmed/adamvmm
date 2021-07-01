@@ -79,6 +79,7 @@ p {
 
 .memory-card.flip {
   transform: rotateY(180deg);
+  background: transparent;
 }
 
 .front-face,
